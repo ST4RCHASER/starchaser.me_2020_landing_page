@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+body, html {
+  height: 100%;
+  margin: 0;
+  color: white;
+}
+.center {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* margin-bottom: -10em; */
+  transition: 1s;
+  /* opacity: 0%; */
+}
+.center-show{
+  margin-bottom: 0em;
+  opacity: 100%;
+}
+.jp-title{
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  line-height: 0vh;
+  letter-spacing: 0.2em;
+  padding-left: 0.5em;
+}
+.sub-title{
+  font-size: 2vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  padding-left: 0.5em;
+}
+.head {
+  font-size: 2.5em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding-left: 0.2em;
+}
+.wand{
+  max-width: 3.5vh;
+}
+.bg-image {
+  background-image: url("../img/bg_blur.jpg");
+  /* Add the blur effect */
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+
+  /* Full height */
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.fab{
+    font-size: 3vh;
+  }
+  .fas{
+    font-size: 3vh;
+  }
+.btn-icon{
+  padding: 1em 1em!important;
+  border-radius: 50%!important;
+}
+.inner{
+  display: inline-block!important;
+}
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 0.5;
+  margin: 20px;
+  padding: 1.2em 1.2em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2vh;
+  border-style: solid;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.fifth {
+  background-color: Transparent;
+  border-color: #ffffff;
+  border-radius: 0;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+.fifth:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #ffffff;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.fifth:hover {
+  color: rgb(0, 0, 0);
+}
+.fifth:hover:after {
+  width: 110%;
+}
